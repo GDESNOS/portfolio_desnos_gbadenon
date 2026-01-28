@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GBADENON DESNOS - Portfolio Fullstack & Mobile Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ/j6Y8dAyYF+TTRfKjY9dF0P9y8j0dY9HwL9z6Xh8K5qj/1j8F6N+l/A2+8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+22901902944" class="whatsapp-float" target="_blank" aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="fr">
+            <img src="https://flagcdn.com/w40/fr.png" alt="Français"> FR
+        </button>
+        <button class="lang-btn" data-lang="en">
+            <img src="https://flagcdn.com/w40/gb.png" alt="English"> EN
+        </button>
+    </div>
+
+    <header class="header-fixed">
+        <div class="header-content">
+            <div class="logo" data-fr="DG" data-en="DG">
+                <img src="images/mon_logo.png" alt="Mon logo professionnel" width="80px" height="80px">
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar-onepage">
+                <a href="#accueil" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a>
+                <a href="#services" class="nav-link" data-fr="Services" data-en="Services">Services</a>
+                <a href="#projets" class="nav-link" data-fr="Projets" data-en="Projects">Projets</a>
+                <a href="#expertise" class="nav-link" data-fr="Expertise" data-en="Expertise">Expertise</a>
+                <a href="#parcours" class="nav-link" data-fr="Parcours" data-en="Journey">Parcours</a>
+                <a href="#contact" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="portfolio-main">
+
+        <!-- Hero Section -->
+        <section id="accueil" class="hero-section">
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                   
+                    <h1 class="animate-in-down">
+                        <span data-fr="Je suis" data-en="I'm">Je suis</span>
+                        <span class="gradient-text">Desnos GBADENON</span>
+                    </h1>
+                    <p class="hero-tagline animate-in-right">
+                        <span class="typewriter" data-fr="Développeur Fullstack & Mobile" data-en="Fullstack & Mobile Developer">Développeur Fullstack & Mobile</span>
+                    </p>
+                    <p class="summary-text animate-fade-in" data-fr="Junior en Flutter & Django, je crée des solutions digitales sur mesure qui répondent aux besoins de votre entreprise." data-en="Junior in Flutter & Django, I create custom digital solutions that meet your business needs.">
+                        Junior en Flutter & Django, je crée des solutions digitales sur mesure qui répondent aux besoins de votre entreprise.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projets" class="cta-button">
+                            <span data-fr="Mes réalisations" data-en="My work">Mes réalisations</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="secondary-button">
+                            <span data-fr="Me contacter" data-en="Contact me">Me contacter</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats animate-fade-in">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label" data-fr="Ans d'expérience" data-en="Years experience">Ans d'expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label" data-fr="Projets réalisés" data-en="Projects completed">Projets réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-fr="Clients satisfaits" data-en="Happy clients">Clients satisfaits</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image animate-fade-in">
+                    <div class="image-container">
+                        <img src="images/ma photo.jpg" alt="Portrait professionnel Desnos GBADENON">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span data-fr="Défiler" data-en="Scroll">Défiler</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Ce que je fais" data-en="What I do">Ce que je fais</span>
+                <h3 data-fr="Mes Services" data-en="My Services">Mes Services</h3>
+                <p class="section-subtitle" data-fr="Des solutions complètes pour tous vos besoins digitaux" data-en="Complete solutions for all your digital needs">
+                    Des solutions complètes pour tous vos besoins digitaux
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4 data-fr="Développement Mobile" data-en="Mobile Development">Développement Mobile</h4>
+                    <p data-fr="Création d'applications mobiles performantes avec Flutter pour iOS et Android. Interface intuitive et expérience utilisateur optimale." data-en="Building high-performance mobile apps with Flutter for iOS and Android. Intuitive interface and optimal user experience.">
+                        Création d'applications mobiles performantes avec Flutter pour iOS et Android. Interface intuitive et expérience utilisateur optimale.
+                    </p>
+                    <ul class="service-features">
+                        <li data-fr="Applications natives cross-platform" data-en="Cross-platform native apps">Applications natives cross-platform</li>
+                        <li data-fr="Design responsive et moderne" data-en="Responsive modern design">Design responsive et moderne</li>
+                        <li data-fr="Intégration API REST" data-en="REST API integration">Intégration API REST</li>
+                        <li data-fr="Publication sur stores" data-en="Store deployment">Publication sur stores</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4 data-fr="Développement Web" data-en="Web Development">Développement Web</h4>
+                    <p data-fr="Sites web et applications web sur mesure avec Django. Solutions robustes, sécurisées et scalables pour votre entreprise." data-en="Custom websites and web applications with Django. Robust, secure, and scalable solutions for your business.">
+                        Sites web et applications web sur mesure avec Django. Solutions robustes, sécurisées et scalables pour votre entreprise.
+                    </p>
+                    <ul class="service-features">
+                        <li data-fr="Backend Django performant" data-en="High-performance Django backend">Backend Django performant</li>
+                        <li data-fr="Frontend moderne (HTML/CSS/JS)" data-en="Modern frontend (HTML/CSS/JS)">Frontend moderne (HTML/CSS/JS)</li>
+                        <li data-fr="Base de données optimisée" data-en="Optimized database">Base de données optimisée</li>
+                        <li data-fr="Hébergement et maintenance" data-en="Hosting and maintenance">Hébergement et maintenance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h4 data-fr="E-commerce" data-en="E-commerce">E-commerce</h4>
+                    <p data-fr="Boutiques en ligne professionnelles avec WordPress/WooCommerce. Gestion simplifiée et paiement sécurisé." data-en="Professional online stores with WordPress/WooCommerce. Simplified management and secure payment.">
+                        Boutiques en ligne professionnelles avec WordPress/WooCommerce. Gestion simplifiée et paiement sécurisé.
+                    </p>
+                    <ul class="service-features">
+                        <li data-fr="Configuration WordPress/WooCommerce" data-en="WordPress/WooCommerce setup">Configuration WordPress/WooCommerce</li>
+                        <li data-fr="Paiement en ligne sécurisé" data-en="Secure online payment">Paiement en ligne sécurisé</li>
+                        <li data-fr="Gestion des stocks" data-en="Inventory management">Gestion des stocks</li>
+                        <li data-fr="SEO et marketing digital" data-en="SEO and digital marketing">SEO et marketing digital</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4 data-fr="API & Backend" data-en="API & Backend">API & Backend</h4>
+                    <p data-fr="Développement d'API REST robustes et documentation complète. Architecture backend scalable et sécurisée." data-en="Robust REST API development with complete documentation. Scalable and secure backend architecture.">
+                        Développement d'API REST robustes et documentation complète. Architecture backend scalable et sécurisée.
+                    </p>
+                    <ul class="service-features">
+                        <li data-fr="API RESTful avec Django" data-en="RESTful API with Django">API RESTful avec Django</li>
+                        <li data-fr="Authentification JWT" data-en="JWT Authentication">Authentification JWT</li>
+                        <li data-fr="Documentation automatique" data-en="Automatic documentation">Documentation automatique</li>
+                        <li data-fr="Tests unitaires et intégration" data-en="Unit and integration tests">Tests unitaires et intégration</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h4 data-fr="UI/UX Design" data-en="UI/UX Design">UI/UX Design</h4>
+                    <p data-fr="Conception d'interfaces modernes et intuitives. Prototypage et maquettes haute fidélité pour vos projets." data-en="Modern and intuitive interface design. Prototyping and high-fidelity mockups for your projects.">
+                        Conception d'interfaces modernes et intuitives. Prototypage et maquettes haute fidélité pour vos projets.
+                    </p>
+                    <ul class="service-features">
+                        <li data-fr="Design system personnalisé" data-en="Custom design system">Design system personnalisé</li>
+                        <li data-fr="Prototypes interactifs Figma" data-en="Interactive Figma prototypes">Prototypes interactifs Figma</li>
+                        <li data-fr="Tests utilisateurs" data-en="User testing">Tests utilisateurs</li>
+                        <li data-fr="Design responsive" data-en="Responsive design">Design responsive</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4 data-fr="Maintenance & Support" data-en="Maintenance & Support">Maintenance & Support</h4>
+                    <p data-fr="Support technique continu et maintenance évolutive. Mises à jour régulières et optimisation des performances." data-en="Continuous technical support and evolving maintenance. Regular updates and performance optimization.">
+                        Support technique continu et maintenance évolutive. Mises à jour régulières et optimisation des performances.
+                    </p>
+                    <ul class="service-features">
+                        <li data-fr="Support technique 24/7" data-en="24/7 technical support">Support technique 24/7</li>
+                        <li data-fr="Correction de bugs" data-en="Bug fixes">Correction de bugs</li>
+                        <li data-fr="Mises à jour sécurité" data-en="Security updates">Mises à jour sécurité</li>
+                        <li data-fr="Optimisation continue" data-en="Continuous optimization">Optimisation continue</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projets" class="projects-section section-padding">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Portfolio" data-en="Portfolio">Portfolio</span>
+                <h3 data-fr="Mes Réalisations" data-en="My Projects">Mes Réalisations</h3>
+                <p class="section-subtitle" data-fr="Du mobile au web, des solutions concrètes pour l'entreprise et les usagers" data-en="From mobile to web, concrete solutions for businesses and users">
+                    Du mobile au web, des solutions concrètes pour l'entreprise et les usagers
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-fr="Tous" data-en="All">Tous</button>
+                <button class="filter-btn" data-filter="mobile" data-fr="Mobile" data-en="Mobile">Mobile</button>
+                <button class="filter-btn" data-filter="web" data-fr="Web" data-en="Web">Web</button>
+                <button class="filter-btn" data-filter="ecommerce" data-fr="E-commerce" data-en="E-commerce">E-commerce</button>
+            </div>
+
+            <div class="projects-grid-new">
+                
+                <article class="project-card-new mobile" data-category="mobile" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="images/LOGO_SMS.png" alt="SMS Time Keeper App">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.example.smstimekeeper" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag" data-fr="Application Mobile" data-en="Mobile App">Application Mobile</span>
+                        </div>
+                        <h4>SMS Time Keeper</h4>
+                        <p data-fr="Application mobile de gestion des tâches quotidiennes avec suivi des performances en temps réel" data-en="Mobile app for daily task management with real-time performance tracking">
+                            Application mobile de gestion des tâches quotidiennes avec suivi des performances en temps réel
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card-new web" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/mgs_projet.png" alt="MGS Médical">
+                        <div class="project-overlay">
+                            <a href="https://www.mgs-medical.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag" data-fr="Développement Web" data-en="Web Development">Développement Web</span>
+                        </div>
+                        <h4 data-fr="MGS Médical: Rendez-vous automatisés" data-en="MGS Medical: Automated Appointments">MGS Médical: Rendez-vous automatisés</h4>
+                        <p data-fr="Plateforme web de prise de rendez-vous médical en ligne avec système de notification automatique" data-en="Online medical appointment booking platform with automatic notification system">
+                            Plateforme web de prise de rendez-vous médical en ligne avec système de notification automatique
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card-new ecommerce" data-category="ecommerce" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/capture_beautiful_kingdom.png" alt="Beautiful Kingdom">
+                        <div class="project-overlay">
+                            <a href="https://www.beautifulkingdom.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">E-commerce</span>
+                        </div>
+                        <h4 data-fr="Site e-commerce Beautiful Kingdom" data-en="Beautiful Kingdom E-commerce Site">Site e-commerce Beautiful Kingdom</h4>
+                        <p data-fr="Boutique en ligne complète pour la vente de produits cosmétiques avec paiement sécurisé" data-en="Complete online store for cosmetic products with secure payment">
+                            Boutique en ligne complète pour la vente de produits cosmétiques avec paiement sécurisé
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Additional projects to showcase skills -->
+                <article class="project-card-new web" data-category="web" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="coming-soon" data-fr="En cours" data-en="In progress">En cours</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <h4 data-fr="Plateforme BDS-ANPE" data-en="BDS-ANPE Platform">Plateforme BDS-ANPE</h4>
+                        <p data-fr="Système de gestion sur mesure pour la BDS-ANPE-Bénin avec dashboard analytique" data-en="Custom management system for BDS-ANPE-Benin with analytical dashboard">
+                            Système de gestion sur mesure pour la BDS-ANPE-Bénin avec dashboard analytique
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card-new mobile" data-category="mobile" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="coming-soon" data-fr="En cours" data-en="In progress">En cours</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Google Maps API</span>
+                        </div>
+                        <h4 data-fr="App Dépannage Automobile" data-en="Car Assistance App">App Dépannage Automobile</h4>
+                        <p data-fr="Application de géolocalisation et assistance routière avec suivi en temps réel" data-en="Geolocation and roadside assistance app with real-time tracking">
+                            Application de géolocalisation et assistance routière avec suivi en temps réel
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card-new mobile" data-category="mobile" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="coming-soon" data-fr="En cours" data-en="In progress">En cours</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag" data-fr="Gouvernement" data-en="Government">Gouvernement</span>
+                        </div>
+                        <h4 data-fr="App DGEau-Bénin" data-en="DGEau-Benin App">App DGEau-Bénin</h4>
+                        <p data-fr="Application mobile pour la gestion de l'eau potable au Bénin" data-en="Mobile application for drinking water management in Benin">
+                            Application mobile pour la gestion de l'eau potable au Bénin
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+            
+            <div class="section-cta">
+                <a href="https://github.com/GDESNOS" target="_blank" class="cta-button">
+                    <i class="fab fa-github"></i>
+                    <span data-fr="Voir plus sur GitHub" data-en="View more on GitHub">Voir plus sur GitHub</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="skills-section section-padding">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Compétences" data-en="Skills">Compétences</span>
+                <h3 data-fr="Ma Stack Technique" data-en="My Tech Stack">Ma Stack Technique</h3>
+                <p class="section-subtitle" data-fr="Technologies et outils que je maîtrise" data-en="Technologies and tools I master">
+                    Technologies et outils que je maîtrise
+                </p>
+            </div>
+            
+            <div class="skills-container">
+
+                <div class="skills-group" data-aos="fade-right">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h4 data-fr="Langages & Frameworks" data-en="Languages & Frameworks">Langages & Frameworks</h4>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Dart / Flutter</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python / Django</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML / CSS</span>
+                                <span class="skill-level">94%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-level">40%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-group" data-aos="fade-up">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h4 data-fr="CMS & Bases de Données" data-en="CMS & Databases">CMS & Bases de Données</h4>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">WordPress</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-level">67%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 67%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-level">55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 55%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-group" data-aos="fade-left">
+                    <div class="skill-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h4 data-fr="Outils & Qualités" data-en="Tools & Qualities">Outils & Qualités</h4>
+                    </div>
+                    <div class="qualities-cloud">
+                        <span data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-github"></i> GitHub</span>
+                        <span data-aos="zoom-in" data-aos-delay="150"><i class="fas fa-flask"></i> Postman</span>
+                        <span data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-rocket"></i> <span data-fr="Dynamique" data-en="Dynamic">Dynamique</span></span>
+                        <span data-aos="zoom-in" data-aos-delay="250"><i class="fas fa-check-circle"></i> <span data-fr="Rigoureux" data-en="Rigorous">Rigoureux</span></span>
+                        <span data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-lightbulb"></i> <span data-fr="Créatif" data-en="Creative">Créatif</span></span>
+                        <span data-aos="zoom-in" data-aos-delay="350"><i class="fas fa-tasks"></i> Trello/Asana</span>
+                        <span data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-code-branch"></i> Git</span>
+                        <span data-aos="zoom-in" data-aos-delay="450"><i class="fas fa-figma"></i> Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section id="parcours" class="timeline-section section-padding">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Mon Histoire" data-en="My Story">Mon Histoire</span>
+                <h3 data-fr="Mon Parcours" data-en="My Journey">Mon Parcours</h3>
+                <p class="section-subtitle" data-fr="Un parcours professionnel et académique riche en expériences" data-en="A professional and academic journey rich in experiences">
+                    Un parcours professionnel et académique riche en expériences
+                </p>
+            </div>
+
+            <div class="timeline-container">
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">10/2024 - 10/2025</span>
+                        <h4 data-fr="Agent d'exploitation informatique - Rab tech" data-en="IT Operations Officer - Rab tech">Agent d'exploitation informatique - Rab tech</h4>
+                        <p data-fr="Développement d'un écosystème d'applications web et mobile pour la gestion d'entreprises au Bénin. Réalisation d'une plateforme sur mesure pour la BDS-ANPE-Bénin." data-en="Development of a web and mobile application ecosystem for business management in Benin. Creation of a custom platform for BDS-ANPE-Benin.">
+                            Développement d'un écosystème d'applications web et mobile pour la gestion d'entreprises au Bénin. Réalisation d'une plateforme sur mesure pour la BDS-ANPE-Bénin.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Flutter</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">06/2024 - 09/2024</span>
+                        <h4 data-fr="Stage Professionnel - Pôle-G" data-en="Professional Internship - Pôle-G">Stage Professionnel - Pôle-G</h4>
+                        <p data-fr="Développement d'une application mobile de dépannage automobile (Flutter + Google Maps) et conception du backoffice web (Django)." data-en="Development of a mobile car assistance app (Flutter + Google Maps) and web back-office design (Django).">
+                            Développement d'une application mobile de dépannage automobile (Flutter + Google Maps) et conception du backoffice web (Django).
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Flutter</span>
+                            <span>Google Maps API</span>
+                            <span>Django REST</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">01/2024 - 06/2024</span>
+                        <h4 data-fr="Stage Professionnel - Iwaju Tech" data-en="Professional Internship - Iwaju Tech">Stage Professionnel - Iwaju Tech</h4>
+                        <p data-fr="Déploiement de trois applications mobiles Flutter sur PlayStore (WaohQR, Marketo, Becca). Conception d'une application pour la DGEau-Bénin." data-en="Deployment of three Flutter mobile apps on PlayStore (WaohQR, Marketo, Becca). Design of an app for DGEau-Benin.">
+                            Déploiement de trois applications mobiles Flutter sur PlayStore (WaohQR, Marketo, Becca). Conception d'une application pour la DGEau-Bénin.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Play Store</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item academic" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h4 data-fr="Licence professionnelle en informatique de gestion" data-en="Professional Bachelor in Management IT">Licence professionnelle en informatique de gestion</h4>
+                        <p data-fr="Institut Universitaire de Technologie (IUT) de Parakou." data-en="University Institute of Technology (IUT) of Parakou.">
+                            Institut Universitaire de Technologie (IUT) de Parakou.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item academic" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020</span>
+                        <h4 data-fr="Baccalauréat" data-en="High School Diploma">Baccalauréat</h4>
+                        <p data-fr="Collège d'enseignement général de Oumbègamè" data-en="General Education College of Oumbègamè">
+                            Collège d'enseignement général de Oumbègamè
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Restons en contact" data-en="Let's connect">Restons en contact</span>
+                <h3 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h3>
+                <p class="section-subtitle" data-fr="Disponible pour de nouvelles opportunités de collaboration" data-en="Available for new collaboration opportunities">
+                    Disponible pour de nouvelles opportunités de collaboration
+                </p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-form-container" data-aos="fade-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-fr="Nom complet" data-en="Full name">Nom complet</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-fr="E-mail" data-en="Email">E-mail</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-fr="Sujet" data-en="Subject">Sujet</label>
+                            <input type="text" id="subject" placeholder="Projet web" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-fr="Message" data-en="Message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button-contact">
+                            <span data-fr="Envoyer le message" data-en="Send message">Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-container" data-aos="fade-left">
+                    <div class="contact-details">
+                        <h4 data-fr="Mes Coordonnées" data-en="My Contact Details">Mes Coordonnées</h4>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5 data-fr="Téléphone" data-en="Phone">Téléphone</h5>
+                                <p><a href="tel:+22901902944">+229 01 90 29 44</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>E-mail</h5>
+                                <p><a href="mailto:gbadenondesnos4@gmail.com">gbadenondesnos4@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>LinkedIn</h5>
+                                <p><a href="https://www.linkedin.com/in/desnos-gbadenon/" target="_blank">desnos-gbadenon</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>GitHub</h5>
+                                <p><a href="https://github.com/GDESNOS" target="_blank">@GDESNOS</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5 data-fr="Localisation" data-en="Location">Localisation</h5>
+                                <p>Abomey-Calavi, Bénin</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/desnos-gbadenon/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/GDESNOS" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/22901902944" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:gbadenondesnos4@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 GBADENON Desnos | <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+           
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
