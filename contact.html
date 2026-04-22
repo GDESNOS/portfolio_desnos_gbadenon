@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de développeur web et mobile spécialisé Flutter, Django, SEO et solutions digitales professionnelles.">
+   
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Portfolio Développeur Flutter & Django">
+<meta name="twitter:description" content="Découvrez mes projets web et mobile.">
+<meta name="twitter:image" content="https://desnos-gbadenon.vercel.app/images/ma%20photo.jpg">
+    
+    <title>GBADENON DESNOS - Portfolio Fullstack & Mobile Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+2290190294436" class="whatsapp-float" target="_blank" aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+      <header class="header-fixed">
+        <div class="header-content">
+            <div class="logo" data-fr="DG" data-en="DG">
+                <img src="images/mon_logo.png" alt="Mon logo professionnel" width="80px" height="80px">
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar-onepage">
+                <a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a>
+                <a href="services.html" class="nav-link" data-fr="Services" data-en="Services">Services</a>
+                <a href="projets.html" class="nav-link" data-fr="Projets" data-en="Projects">Projets</a>
+                <a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+  <main id="portfolio-main">
+      <section id="contact" class="contact-section section-padding">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Restons en contact" data-en="Let's connect">Restons en contact</span>
+                <h3 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h3>
+                <p class="section-subtitle" data-fr="Disponible pour de nouvelles opportunités de collaboration" data-en="Available for new collaboration opportunities">
+                    Disponible pour de nouvelles opportunités de collaboration
+                </p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-form-container" data-aos="fade-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-fr="Nom complet" data-en="Full name">Nom complet</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-fr="E-mail" data-en="Email">E-mail</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-fr="Sujet" data-en="Subject">Sujet</label>
+                            <input type="text" id="subject" placeholder="Projet web" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-fr="Message" data-en="Message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button-contact">
+                            <span data-fr="Envoyer le message" data-en="Send message">Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-container" data-aos="fade-left">
+                    <div class="contact-details">
+                        <h4 data-fr="Mes Coordonnées" data-en="My Contact Details">Mes Coordonnées</h4>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5 data-fr="Téléphone" data-en="Phone">Téléphone</h5>
+                                <p><a href="tel:+2290190294436">+229 01 90 29 44 36</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>E-mail</h5>
+                                <p><a href="mailto:gbadenondesnos4@gmail.com">gbadenondesnos4@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>LinkedIn</h5>
+                                <p><a href="https://www.linkedin.com/in/desnos-gbadenon/" target="_blank">desnos-gbadenon</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>GitHub</h5>
+                                <p><a href="https://github.com/GDESNOS" target="_blank">@GDESNOS</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5 data-fr="Localisation" data-en="Location">Localisation</h5>
+                                <p>Abomey-Calavi, Bénin</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/desnos-gbadenon/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/GDESNOS" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/2290190294436" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:gbadenondesnos4@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+  </main>
+
+
+  <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 GBADENON Desnos | <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+           
+        </div>
+    </footer>
+
+    <script src="script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de développeur web et mobile spécialisé Flutter, Django, SEO et solutions digitales professionnelles.">
+   
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Portfolio Développeur Flutter & Django">
+<meta name="twitter:description" content="Découvrez mes projets web et mobile.">
+<meta name="twitter:image" content="https://desnos-gbadenon.vercel.app/images/ma%20photo.jpg">
+    
+    <title>GBADENON DESNOS - Portfolio Fullstack & Mobile Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+2290190294436" class="whatsapp-float" target="_blank" aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+  <header class="header-fixed">
+        <div class="header-content">
+            <div class="logo" data-fr="DG" data-en="DG">
+                <img src="images/mon_logo.png" alt="Mon logo professionnel" width="80px" height="80px">
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar-onepage">
+                <a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a>
+                <a href="services.html" class="nav-link" data-fr="Services" data-en="Services">Services</a>
+                <a href="projets.html" class="nav-link" data-fr="Projets" data-en="Projects">Projets</a>
+                <a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+  <main id="portfolio-main">
+    
+        <!-- Projects Section -->
+        <section id="projets" class="projects-section section-padding">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Portfolio" data-en="Portfolio">Portfolio</span>
+                <h3 data-fr="Mes Réalisations" data-en="My Projects">Mes Réalisations</h3>
+                <p class="section-subtitle" data-fr="Du mobile au web, des solutions concrètes pour l'entreprise et les usagers" data-en="From mobile to web, concrete solutions for businesses and users">
+                    Du mobile au web, des solutions concrètes pour l'entreprise et les usagers
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-fr="Tous" data-en="All">Tous</button>
+                <button class="filter-btn" data-filter="mobile" data-fr="Mobile" data-en="Mobile">Mobile</button>
+                <button class="filter-btn" data-filter="web" data-fr="Web" data-en="Web">Web</button>
+                <button class="filter-btn" data-filter="ecommerce" data-fr="E-commerce" data-en="E-commerce">E-commerce</button>
+            </div>
+
+            <div class="projects-grid-new">
+                
+                <article class="project-card-new mobile" data-category="mobile" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="images/LOGO_SMS.png" alt="SMS Time Keeper App">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.example.smstimekeeper" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag" data-fr="Application Mobile" data-en="Mobile App">Application Mobile</span>
+                        </div>
+                        <h4>SMS Time Keeper</h4>
+                        <p data-fr="Application mobile de gestion des tâches quotidiennes avec suivi des performances en temps réel" data-en="Mobile app for daily task management with real-time performance tracking">
+                            Application mobile de gestion des tâches quotidiennes avec suivi des performances en temps réel
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card-new web" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/mgs_projet.png" alt="MGS Médical">
+                        <div class="project-overlay">
+                            <a href="https://www.mgs-medical.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag" data-fr="Développement Web" data-en="Web Development">Développement Web</span>
+                        </div>
+                        <h4 data-fr="MGS Médical: Rendez-vous automatisés" data-en="MGS Medical: Automated Appointments">MGS Médical: Rendez-vous automatisés</h4>
+                        <p data-fr="Plateforme web de prise de rendez-vous médical en ligne avec système de notification automatique" data-en="Online medical appointment booking platform with automatic notification system">
+                            Plateforme web de prise de rendez-vous médical en ligne avec système de notification automatique
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card-new ecommerce" data-category="ecommerce" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/capture_beautiful_kingdom.png" alt="Beautiful Kingdom">
+                        <div class="project-overlay">
+                            <a href="https://www.beautifulkingdom.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">E-commerce</span>
+                        </div>
+                        <h4 data-fr="Site e-commerce Beautiful Kingdom" data-en="Beautiful Kingdom E-commerce Site">Site e-commerce Beautiful Kingdom</h4>
+                        <p data-fr="Boutique en ligne complète pour la vente de produits cosmétiques avec paiement sécurisé" data-en="Complete online store for cosmetic products with secure payment">
+                            Boutique en ligne complète pour la vente de produits cosmétiques avec paiement sécurisé
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Additional projects to showcase skills -->
+                <article class="project-card-new web" data-category="web" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="coming-soon" data-fr="En cours" data-en="In progress">En cours</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <h4 data-fr="Plateforme BDS-ANPE" data-en="BDS-ANPE Platform">Plateforme BDS-ANPE</h4>
+                        <p data-fr="Système de gestion sur mesure pour la BDS-ANPE-Bénin avec dashboard analytique" data-en="Custom management system for BDS-ANPE-Benin with analytical dashboard">
+                            Système de gestion sur mesure pour la BDS-ANPE-Bénin avec dashboard analytique
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card-new mobile" data-category="mobile" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="coming-soon" data-fr="En cours" data-en="In progress">En cours</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Google Maps API</span>
+                        </div>
+                        <h4 data-fr="App Dépannage Automobile" data-en="Car Assistance App">App Dépannage Automobile</h4>
+                        <p data-fr="Application de géolocalisation et assistance routière avec suivi en temps réel" data-en="Geolocation and roadside assistance app with real-time tracking">
+                            Application de géolocalisation et assistance routière avec suivi en temps réel
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card-new mobile" data-category="mobile" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="coming-soon" data-fr="En cours" data-en="In progress">En cours</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag" data-fr="Gouvernement" data-en="Government">Gouvernement</span>
+                        </div>
+                        <h4 data-fr="App DGEau-Bénin" data-en="DGEau-Benin App">App DGEau-Bénin</h4>
+                        <p data-fr="Application mobile pour la gestion de l'eau potable au Bénin" data-en="Mobile application for drinking water management in Benin">
+                            Application mobile pour la gestion de l'eau potable au Bénin
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+            
+            <div class="section-cta">
+                <a href="https://github.com/GDESNOS" target="_blank" class="cta-button">
+                    <i class="fab fa-github"></i>
+                    <span data-fr="Voir plus sur GitHub" data-en="View more on GitHub">Voir plus sur GitHub</span>
+                </a>
+            </div>
+        </section>
+  </main>
+
+      <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 GBADENON Desnos | <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+           
+        </div>
+    </footer>
+
+    <script src="script.min.js"></script>
+</body>
+</html>
