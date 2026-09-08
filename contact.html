@@ -19,6 +19,23 @@
 </head>
 <body>
 
+    <!-- Page Loader -->
+    <div id="page-loader" aria-hidden="true">
+        <div class="loader-ring">
+            <img src="images/mon_logo.png" alt="" class="loader-logo">
+        </div>
+        <span class="loader-text" data-fr="Chargement" data-en="Loading">Chargement</span>
+    </div>
+    <noscript><style>#page-loader{display:none}</style></noscript>
+
+    <!-- Ambient animated background -->
+    <div class="ambient-bg" aria-hidden="true">
+        <span class="ambient-orb o1"></span>
+        <span class="ambient-orb o2"></span>
+        <span class="ambient-orb o3"></span>
+        <span class="ambient-orb o4"></span>
+    </div>
+
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/+2290190294436" class="whatsapp-float" target="_blank" aria-label="Contact via WhatsApp">
         <i class="fab fa-whatsapp"></i>
@@ -48,7 +65,7 @@
         </div>
     </header>
   <main id="portfolio-main">
-      <section id="contact" class="contact-section section-padding">
+      <section id="contact" class="contact-section section-padding contact-hero">
             <div class="section-header">
                 <span class="section-tag" data-fr="Restons en contact" data-en="Let's connect">Restons en contact</span>
                 <h1 data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h1>
@@ -59,23 +76,43 @@
 
             <div class="contact-layout">
                 <div class="contact-form-container" data-aos="fade-right">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" novalidate>
                         <div class="form-group">
                             <label for="name" data-fr="Nom complet" data-en="Full name">Nom complet</label>
-                            <input type="text" id="name" placeholder="John Doe" required>
+                            <div class="input-icon-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="email" data-fr="E-mail" data-en="Email">E-mail</label>
-                            <input type="email" id="email" placeholder="john@example.com" required>
+                            <div class="input-icon-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="subject" data-fr="Sujet" data-en="Subject">Sujet</label>
-                            <input type="text" id="subject" placeholder="Projet web" required>
+                            <div class="input-icon-group">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" placeholder="Projet web" required>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="message" data-fr="Message" data-en="Message">Message</label>
-                            <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+                            <div class="input-icon-group">
+                                <i class="fas fa-comment-dots"></i>
+                                <textarea id="message" name="message" rows="5" placeholder="Votre message..." required maxlength="1000"></textarea>
+                            </div>
+                            <span class="char-counter"><span id="messageCount">0</span>/1000</span>
                         </div>
+
+                        <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_replyto" value="">
+                        <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off">
+
                         <button type="submit" class="cta-button-contact">
                             <span data-fr="Envoyer le message" data-en="Send message">Envoyer le message</span>
                             <i class="fas fa-paper-plane"></i>
