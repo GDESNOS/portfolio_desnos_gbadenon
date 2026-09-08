@@ -34,11 +34,11 @@
 .services-section.page-top,.projects-section.page-top{padding-top:calc(var(--header-height) + 50px)}
 
 /* ===== HERO ANIMATED GRAPHIC ===== */
-.hero-graphic{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56vw;max-width:800px;min-width:320px;opacity:.4;z-index:-1;pointer-events:none;user-select:none}
-body.dark-theme .hero-graphic{opacity:.55;mix-blend-mode:screen}
-@media (max-width:900px){.hero-graphic{opacity:.32;width:80vw}}
-@media (max-width:768px){.hero-graphic{width:92vw;max-width:480px;opacity:.22}
-    body.dark-theme .hero-graphic{opacity:.35}
+.hero-graphic{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56vw;max-width:800px;min-width:320px;opacity:.22;z-index:-1;pointer-events:none;user-select:none}
+body.dark-theme .hero-graphic{opacity:.32;mix-blend-mode:screen}
+@media (max-width:900px){.hero-graphic{opacity:.18;width:80vw}}
+@media (max-width:768px){.hero-graphic{width:92vw;max-width:480px;opacity:.13}
+    body.dark-theme .hero-graphic{opacity:.2}
 }
 
 /* ===== MOBILE BOTTOM NAVIGATION ===== */

@@ -4,15 +4,12 @@
     <loc>https://desnos-gbadenon.vercel.app/</loc>
   </url>
   <url>
-    <loc>https://desnos-gbadenon.vercel.app/contact.html/</loc>
+    <loc>https://desnos-gbadenon.vercel.app/services</loc>
   </url>
   <url>
-    <loc>https://desnos-gbadenon.vercel.app/index.html/</loc>
+    <loc>https://desnos-gbadenon.vercel.app/projets</loc>
   </url>
   <url>
-    <loc>https://desnos-gbadenon.vercel.app/projets.html/</loc>
-  </url>
-  <url>
-    <loc>https://desnos-gbadenon.vercel.app/services.html/</loc>
+    <loc>https://desnos-gbadenon.vercel.app/contact</loc>
   </url>
 </urlset>
